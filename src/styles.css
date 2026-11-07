@@ -230,3 +230,75 @@ h1 {
     transform: translateY(0%);
   }
 }
+
+/*
+  Keyboard stretch goal styles
+*/
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  width: 100%;
+}
+
+.keyboard-key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  max-width: 40px;
+  height: 48px;
+  flex: 1;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background: var(--color-gray-900);
+  color: black;
+  user-select: none;
+}
+
+.keyboard-key.correct {
+  background: var(--color-success);
+  color: white;
+}
+
+.keyboard-key.misplaced {
+  background: var(--color-warning);
+  color: white;
+}
+
+.keyboard-key.incorrect {
+  background: var(--color-gray-300);
+  color: white;
+}
+
+/*
+  Restart button stretch goal styles
+*/
+.restart-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: white;
+  color: var(--color-gray-100);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 150ms;
+}
+
+.restart-btn:hover {
+  opacity: 0.85;
+}
+
